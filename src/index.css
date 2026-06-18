@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --color-medical-blue: #4a90e2;
+  --color-success-green: #2ecc71;
+  --color-warning-red: #e74c3c;
+  --color-dark-gray: #2c3e50;
+  --color-soft-teal: #e0f7fa;
+  --color-light-blue: #e3f2fd;
+}
+
+body {
+  @apply antialiased text-dark-gray min-h-screen bg-gradient-to-br from-soft-teal via-light-blue to-white;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.glass-card {
+  @apply bg-white/70 backdrop-blur-lg border border-white/40 shadow-2xl rounded-[2rem];
+}
+
+.input-field {
+  @apply w-full px-5 py-4 rounded-2xl border border-gray-200 bg-white/40 focus:bg-white focus:border-medical-blue focus:ring-4 focus:ring-medical-blue/10 transition-all outline-none text-lg;
+}
+
+.btn-primary {
+  @apply w-full py-5 px-8 rounded-2xl bg-gradient-to-r from-medical-blue to-[#357abd] text-white font-bold text-lg shadow-xl hover:shadow-medical-blue/40 hover:-translate-y-1 transition-all active:translate-y-0 disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+/* Custom scrollbar for chat section */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-gray-200 rounded-full hover:bg-gray-300;
+}
