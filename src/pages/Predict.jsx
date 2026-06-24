@@ -21,8 +21,10 @@ import {
 import { Link } from "react-router-dom";
 
 // const API_URL = "http://127.0.0.1:5000/predict";
-const API_URL = "http://127.0.0.1:5000/predict";
-const DOWNLOAD_URL = "http://127.0.0.1:5000/download-report";
+// const DOWNLOAD_URL = "http://127.0.0.1:5000/download-report";
+const API_URL = "https://healthguard-ai-backend-3.onrender.com/predict";
+const DOWNLOAD_URL =
+  "https://healthguard-ai-backend-3.onrender.com/download-report";
 
 const inputFields = [
   {

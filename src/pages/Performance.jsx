@@ -23,7 +23,7 @@ import {
 } from "react-icons/md";
 import { GiBullseye, GiDna2 } from "react-icons/gi";
 
-const API_URL = "http://127.0.0.1:5000/performance";
+const API_URL = "https://healthguard-ai-backend-3.onrender.com/performance";
 
 function Performance() {
   const [data, setData] = useState(null);
